@@ -1,11 +1,11 @@
 from fastapi import FastAPI, File, UploadFile
 
-from api.inference.mock import MockDetector
+from api.inference.yolo import YoloDetector
 from api.schemas.detection import DetectionResponse
 
 app = FastAPI(title="yolo-perception-agent")
 
-detector = MockDetector()
+detector = YoloDetector()
 
 
 @app.get("/health")
