@@ -61,3 +61,14 @@ Example detection response:
 
 ## Status
 MVP in progress.
+
+## MVP Demo Protocol (A/B)
+- Test protocol (home/office): `docs/protocolo_ab_mvp.md`
+- Demo report template: `docs/template_relatorio_demo.md`
+
+## New endpoint for demo scoring
+- `POST /detect/score` returns:
+  - detections
+  - visual cleanliness score (`0..100`)
+  - classification (`limpo`, `sujo`)
+  - short report and scoring breakdown
